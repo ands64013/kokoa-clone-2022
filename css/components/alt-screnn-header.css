@@ -1,9 +1,13 @@
 .alt-header {
   padding: var(--horizontal-space);
-  margin: 15px 0px;
+  /* margin: 15px 0px; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.alt-header__column {
+  width: 33%;
 }
 
 .alt-header__title {
@@ -12,9 +16,30 @@
 }
 
 .alt-header__column:first-child {
-  margin-right: auto;
+  /* margin-right: auto; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.alt-header__column:nth-child(2) {
+  /* margin-right: auto; */
+  text-align: center;
 }
 
 .alt-header__column:last-child {
-  margin-left: auto;
+  /* margin-left: auto; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 10px;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
 }
